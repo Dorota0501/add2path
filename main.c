@@ -45,7 +45,7 @@ void changeFile() {
 
 	    } else {
 
-	        strncpy(n_path, c_path, strlen(c_path)-2);
+	        strncpy(n_path, c_path, strlen(c_path)-3);
 	        strcat(n_path, ":");
 	        strcat(n_path, a_path);
 	        strcat(n_path, "\" \0");
