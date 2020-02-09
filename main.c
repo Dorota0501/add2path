@@ -35,17 +35,13 @@ void changeFile() {
 
 	    if (contain != NULL) {
 
-	    	//if (strstr(a_path,cwd) != NULL )
-	    	//	strncpy(n_path, c_path, strlen(c_path) - strlen(contain)-1);
-	    	//else
-
 	    	strncpy(n_path, c_path, strlen(c_path) - strlen(contain)-1);
 		strcat(n_path, "\" \0");
 	        printf("\n '%s' directory has been cut from $PATH\n", a_path);
 
 	    } else {
 
-	        strncpy(n_path, c_path, strlen(c_path)-3);
+	        strncpy(n_path, c_path, strlen(c_path)-2);
 	        strcat(n_path, ":");
 	        strcat(n_path, a_path);
 	        strcat(n_path, "\" \0");
