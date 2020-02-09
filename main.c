@@ -48,7 +48,7 @@ void changeFile() {
 	        strncpy(n_path, c_path, strlen(c_path)-2);
 	        strcat(n_path, ":");
 	        strcat(n_path, a_path);
-	        strcat(n_path, "\"");
+	        strcat(n_path, "\" \0");
 
 	        printf("'%s' directory has been added to $PATH\n", a_path);
 
